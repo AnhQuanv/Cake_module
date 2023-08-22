@@ -1,0 +1,128 @@
+/* @import url(https://db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=Brandon+Grot+W01+Light); */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+/* @font-face {
+    font-family: "Brandon Grot W01 Light";
+    src: url("https://db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.eot");
+    src: url("https://db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.svg#Brandon Grot W01 Light")format("svg");
+} */
+
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fonttitle {
+    font-family: Brandon Grot W01 Light,sans-serif;
+    font-size: 22px;
+    color: #605E5E;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.fonth3 {
+    font-family: avenir-lt-w05_85-heavy,sans-serif;
+    font-size: 16px;
+    color: #2f2e2e;
+    padding: 15px 32px;
+}
+
+.fontp {
+    font-family: libre baskerville,serif;
+    font-size: 16px;
+    color: #2f2e2e;
+    margin: 13px 0;
+     
+}
+
+.faqs-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+.faqs-container .questions-container {
+    box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+}
+
+.faqs-container .faq-header {
+    display: flex;
+    background: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    /* color: #f1faee; */
+    position: relative;
+    cursor: pointer;
+}
+
+.faqs-container .faq-header .open,
+.faqs-container .faq-header .close {
+    position: absolute;
+    right: 0;
+    padding: 0 32px;
+    font-size: 15px;
+    font-weight: bold;
+    transform: translateY(-8px);
+    opacity: 0;
+    transition: all 1000ms;
+}
+
+.faqs-container .faq-header .open.active,
+.faqs-container .faq-header .close.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.faqs-container .content {
+    padding: 0 32px;
+    line-height: 2;
+    background: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 500ms;
+}
+
+.faqs-container .content.active {
+    max-height: 600px;
+}
+
+.search-box {
+    background: #fff;
+    border-radius: 30px;
+}
+
+.search-box .search-text {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 10px 15px;
+    /* background: #333 ; */
+    /* border-radius: 30px; */
+    width: 0px;
+    padding: 0px; 
+    transition: all 0.45s ease-in-out;
+}
+
+.faqs-container .search-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 12px 0;
+    
+}
+
+.search-box:hover .search-text, .search-box .search-text:valid {
+    width:300px;
+}
+
+.search-box .search-btn {
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
